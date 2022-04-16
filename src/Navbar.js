@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Datetime from "./Datetime";
 
 const Navbar = () => {
@@ -7,8 +8,8 @@ const Navbar = () => {
     <nav className="navbar">
       <h1>{title}</h1>
       <div className="links">
-        <a href="/">Home</a>
-        <a href="/create">New Blog</a>
+        <Link to="/">Home</Link>
+        <Link to="/create">New Blog</Link>
         <a href={link} target="_blank">
           Portfolio
         </a>
