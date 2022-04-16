@@ -17,3 +17,17 @@ code {
   flex-wrap: wrap;
   justify-content:space-around
 }
+
+.bloglist a {
+  text-decoration: none;
+}
+
+.blog-single {
+  border: 1px solid #e1d7d7;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+
+.blog-single:hover {
+  box-shadow: 1px 2px 3px lightgrey;
+}
