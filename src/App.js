@@ -1,23 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
 function App() {
+  const title = "Nick's Blog";
+  const link = "https://nikhilportfolio.netlify.app/";
+  const date = new Date();
+  const yr = date.getFullYear();
+  const m = date.getMonth();
+  const d = date.getDate();
+  const hr = date.getHours();
+  const min = date.getMinutes();
+  const sec = date.getSeconds();
+  const time = Date.now();
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+  const month = months[m];
+  const ampm = hr >= 12 && min >= 0 ? " pm" : " am";
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+      <div className="content">
+        <h1>{title}</h1>
+        <a href={link} target="_blank">
+          Portfolio
         </a>
-      </header>
+        <p>
+          {d}, {month} {yr} {hr}:{min}:{sec} {ampm}
+        </p>
+      </div>
     </div>
   );
 }
