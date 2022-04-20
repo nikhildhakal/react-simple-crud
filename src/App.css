@@ -3,3 +3,63 @@
     padding: 0;
     font-family: "Roboto", sans-serif;
 }
+
+body {
+	line-height: 1.5;
+}
+
+h1, h2, h3 {
+	font-weight: 800;
+	line-height: 1.1;
+}
+
+h1, h3, p {
+	margin: 1em 0 0;
+	max-width: 70ch;
+}
+
+h1 {
+	font-size: 6rem;
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+p {
+	line-height: 1.5;
+}
+
+a {
+    color: rgb(9, 89, 217);
+    text-decoration: none;
+}
+
+button {
+	margin: 10px 0;
+	text-align: center;
+	cursor: pointer;
+}
+
+.container {
+	padding: 0 1em;
+	width: 100%;
+	max-width: 85%;
+	margin: 0 auto;
+}
+
+.row {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+@media (min-width: 60em) {
+	.row {
+		flex-direction: row;
+	}
+}
